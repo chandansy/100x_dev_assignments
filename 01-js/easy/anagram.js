@@ -14,12 +14,18 @@ function isAnagram(str1, str2) {
   else{
     new_str1 = str1.toLowerCase()
     new_str2 = str2.toLowerCase()
+    console.log(new_str1)
+    console.log(new_str2)
 
     new_str1 = new_str1.split("")
     new_str2 = new_str2.split("")
 
     new_str1 = new_str1.sort()
     new_str2 = new_str2.sort()
+
+    new_str1 = new_str1.join("")
+    new_str2 = new_str2.join("")
+
 
     if (new_str1 == new_str2){
       return true
@@ -32,5 +38,8 @@ function isAnagram(str1, str2) {
   }
 
 }
+console.log(isAnagram("!spar", "!rasp")); // true
 
 module.exports = isAnagram;
+
+
