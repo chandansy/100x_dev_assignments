@@ -9,9 +9,11 @@ router.post('/signup', (req, res) => {
 
 router.get('/courses', (req, res) => {
     // Implement listing all courses logic
+    res.json({ message: "Listing all courses" });
+    res.status
 });
 
-router.post('/courses/:courseId', userMiddleware, (req, res) => {
+router.post('/courses/:courseId', userMiddleware, (req, res) => { 
     // Implement course purchase logic
 });
 
