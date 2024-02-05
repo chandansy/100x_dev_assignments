@@ -6,6 +6,7 @@ const {Admin}  = require('../db/index');
 // Admin Routes
 router.post('/signup', async (req, res) => {
     // Implement admin signup logic
+    console.log(req)
     const username = req.body.username;
     const password = req.body.password;
 
